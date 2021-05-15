@@ -29,17 +29,30 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+
    .forEach and .map both iterate through and execute a function on each item in an array by ascending index. .map requires a return statement that implicitly pushes the results of its function being executed on the original array's items to a new array. .forEach does not require a return statement, does not create a new array (without being told to do so with a push to an empty array), and the callback function within it can mutate the original array.
 
 2. Explain the difference between a callback and a higher order function.
+
    A callback is a function that is used as an argument inside of another function. A higher order function is the function into which the callback is passed. The higher order function executes its operations on another function, either by using it as an argument or simply returning it.
 
 3. Can you explain what a closure is and how you used it in the counter function?
+
    A closure is when a function looks outside of its lexical scope to its parent scope for a value. Using the counter function as an example, the counter variable is declared outside of the scope of the loop. Each time the loop runs it reaches outside of its scope to its parent scope to grab the value of counter, a closure. counter's value starts at 0 and is increased by 1 every time the loop runs. The loop runs, and adds 1 to the counter. Since counter is outside of the loop's scope, it is not reset every time the loop runs and is able to be updated by the loop. If it were not for this closure happening, it would be impossible for the loop to access counter AND for counter to not be reset at the start of each new loop.
 
 4. Describe the four principles of the 'this' keyword.
 
+   Principle 1: window/Global Object binding - when in the global scope, 'this' refer to the window/console object. Without context, 'this' binds to the window object in the browser, which is basically everything that is globally avaiilible in javascript.
+
+   Principle 2: Implicit binding - implicit binding happens when 'this' is given context. For example, when a method is called on an object, the object becomes 'this'. In the syntax object.method(), the object preceding the dot automatically becomes what 'this' refers to.
+
+   Principle 3: New Binding - when a constructor function is invoked to create a new instance of an object, that specific instance is what 'this' refers to. Typically in constructors 'this' is used in creating the template for the object keys. When the constructor is used to create a new object, the 'this' from the constructor is passed to that specific new object.
+
+   Principle 4: Explicit Binding - explicit binding is used to override implicit binding using .call, .apply, or .bind. When these methods are used, 'this' is explicity defined. In an example of creating a child constructor from a parent, .call is used to bind the 'this' attributes from the parent to now apply to the child.
+
 5. Why do we need super() in an extended class?
+
+   super works alongside the extends keyword to do the job that .call and object.create() used to do. super takes care of binding and gives the child object access to the parent's 'this' context. Without super we wouldn't have access to the parent's 'this' context and thereby its attributes and prototype.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
