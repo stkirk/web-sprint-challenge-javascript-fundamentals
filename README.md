@@ -29,7 +29,7 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-   .forEach
+   .forEach and .map both iterate through and execute a function on each item in an array by ascending index. .map requires a return statement that implicitly pushes the results of its function being executed on the original array's items to a new array. .forEach does not require a return statement, does not create a new array (without being told to do so with a push to an empty array), and the callback function within it can mutate the original array.
 
 2. Explain the difference between a callback and a higher order function.
 
