@@ -200,6 +200,16 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 // 🦁💪 Stretch: If you haven't already, convert your array method callbacks into arrow functions - make sure you comment out this section before you submit your work 🦁💪
 
+//already wrote first 3 array methods as arrow function, here is a conversion of .reduce
+
+// function USApop(array) {
+//   const USApop = array.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue.population;
+//   }, 0);
+//   return USApop;
+// }
+// console.log("USA population", USApop(zooAnimals));
+
 // 🐴🐴🐴 Topic 3: Prototypes 🐴🐴🐴 //
 //🐴🐴🐴 Task: You are to build a cuboid maker that can return values for a cuboid's volume or surface area. Cuboids are similar to cubes but do not have even sides. Follow the steps in order to accomplish this challenge. 🐴🐴🐴
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
