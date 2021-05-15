@@ -176,12 +176,14 @@ function consume(a, b, cb) {
 function add(num1, num2) {
   return num1 + num2;
 }
+console.log("add", consume(5, 2, add));
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
 
-function multiply(/*Your Code Here */) {
-  /*Your Code Here */
+function multiply(num1, num2) {
+  return num1 * num2;
 }
+console.log("multiply", consume(5, 2, multiply));
 
 // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
 
