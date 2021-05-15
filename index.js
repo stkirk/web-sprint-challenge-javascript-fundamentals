@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀:
 
-// nestedFunction can access the variable internal because it is within its parent's lexical scope. Since nestedFunction is within another function, myFunction, all variables declared in myFunction are availible to be used in nestedFunction just as myFunction has access to the global variable, external. If a varible were to be declared in nestedFunction, it would be within nestedFunction's lexical scope and thus not able to be accessed by its parent, myFunction, or other functions in the global scope. In other words, a function can reach outside of its scope for a variable, but other functions can't reach into another function.
+// nestedFunction can access the variable internal because it is within its parent's lexical scope. Since nestedFunction is within another function, myFunction, all variables declared in myFunction are availible to be used in nestedFunction just as myFunction has access to the global variable, external. If a varible were to be declared in nestedFunction, it would be within nestedFunction's lexical scope and thus not able to be accessed by its parent, myFunction, or other functions in the global scope. In other words, a function can reach outside of its scope for a variable, but other functions can't reach in.
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
