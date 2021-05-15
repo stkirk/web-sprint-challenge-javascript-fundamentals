@@ -32,8 +32,10 @@ Edit this document to include your answers after each question. Make sure to lea
    .forEach and .map both iterate through and execute a function on each item in an array by ascending index. .map requires a return statement that implicitly pushes the results of its function being executed on the original array's items to a new array. .forEach does not require a return statement, does not create a new array (without being told to do so with a push to an empty array), and the callback function within it can mutate the original array.
 
 2. Explain the difference between a callback and a higher order function.
+   A callback is a function that is used as an argument inside of another function. A higher order function is the function into which the callback is passed. The higher order function executes its operations on another function, either by using it as an argument or simply returning it.
 
 3. Can you explain what a closure is and how you used it in the counter function?
+   A closure is when a function looks outside of its lexical scope to its parent scope for a value. Using the counter function as an example, the counter variable is declared outside of the scope of the loop. Each time the loop runs it reaches outside of its scope to its parent scope to grab the value of counter, a closure. counter's value starts at 0 and is increased by 1 every time the loop runs. The loop runs, and adds 1 to the counter. Since counter is outside of the loop's scope, it is not reset every time the loop runs and is able to be updated by the loop. If it were not for this closure happening, it would be impossible for the loop to access counter AND for counter to not be reset at the start of each new loop.
 
 4. Describe the four principles of the 'this' keyword.
 
